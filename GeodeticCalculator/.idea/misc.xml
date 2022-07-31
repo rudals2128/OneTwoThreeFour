@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/drawable/box_round_1c9095_10.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/drawable/box_round_3e4157_10.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/drawable/box_round_stroke_e3e3e3_5.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/drawable/box_round_stroke_fcfcfc_1c9095_5.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/drawable/selector_box_color_e3e3e3_1c9095.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/direction_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/main_drawer_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/metastasis_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/rec_v_list_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/synthesis_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/layout/triangle_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GeodeticCalculator/app/src/main/res/menu/navigation_menu.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

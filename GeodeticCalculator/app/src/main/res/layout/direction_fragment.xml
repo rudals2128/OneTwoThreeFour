@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/tv_guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ll_right"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:id="@+id/tv_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D : "
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_az"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_d_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:layout_marginEnd="10dp"
+                android:maxLength="10"
+                app:layout_constraintStart_toStartOf="@id/tv_east_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_d"
+                android:hint="0"
+                />
+            <TextView
+                android:id="@+id/tv_az"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AZ :"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_east"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_az_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:maxLength="10"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_east_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_az"
+                android:hint="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_east"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="동거차 :"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_east_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toEndOf="@id/tv_east"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_east"
+                android:hint="0"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/ll_left"
+            app:layout_constraintStart_toEndOf="@id/ll_left"
+            >
+            <TextView
+                android:id="@+id/tv_north"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="북거차 : "
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_north_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toEndOf="@id/tv_north"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:hint="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_be"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/tv_north"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="20dp"
+                android:text="BE : "
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_be_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:maxLength="10"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_north_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_be"
+                android:hint="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/tv_be"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="20dp"
+                android:text="상한 : "
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_limit_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#262630"
+                android:textSize="16dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="@id/tv_north_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_limit"
+                android:hint="0"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/edt_one_east"
+            android:text="* 아래 값을 입력해 주세요. "
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_one_east"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_box_color_e3e3e3_1c9095"
+            android:gravity="center"
+            android:hint="1# 동거"
+            android:padding="15dp"
+            android:textColor="#30333d"
+            android:textSize="16dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@id/edt_two_east"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edt_one_north"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/edt_one_north"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_box_color_e3e3e3_1c9095"
+            android:gravity="center"
+            android:hint="1# 북거"
+            android:padding="15dp"
+            android:textColor="#30333d"
+            android:textSize="16dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toTopOf="@id/edt_two_north"
+            app:layout_constraintStart_toEndOf="@id/edt_one_east"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/edt_two_east"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_box_color_e3e3e3_1c9095"
+            android:gravity="center"
+            android:hint="2# 동거"
+            android:padding="15dp"
+            android:textColor="#30333d"
+            android:textSize="16dp"
+            android:layout_marginEnd="5dp"
+
+            app:layout_constraintBottom_toTopOf="@id/btn_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edt_two_north"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/edt_two_north"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_box_color_e3e3e3_1c9095"
+            android:gravity="center"
+            android:hint="2# 북거"
+            android:padding="15dp"
+            android:textColor="#30333d"
+            android:textSize="16dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_go"
+            app:layout_constraintStart_toEndOf="@id/edt_two_east"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="초기화"
+            android:background="@drawable/box_round_3e4157_10"
+            android:gravity="center"
+            android:textColor="#f5f6fa"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_go"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/btn_go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="계산하기"
+            android:background="@drawable/box_round_1c9095_10"
+            android:gravity="center"
+            android:textColor="#f5f6fa"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_reset"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

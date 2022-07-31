@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_metastasis"
+        android:title="전이" />
+
+    <item
+        android:id="@+id/navigation_direction"
+        android:title="방향" />
+
+    <item
+        android:id="@+id/navigation_triangle"
+        android:title="삼각" />
+
+    <item
+        android:id="@+id/navigation_synthesis"
+        android:title="종합" />
+
+</menu>
